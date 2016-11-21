@@ -1,0 +1,35 @@
+<!-- navbar header -->
+<div class="navbar-header {{app.settings.navbarHeaderColor}}">
+    <a href class="navbar-brand text-lt" ng-click="app.settings.asideFolded = !app.settings.asideFolded">
+        <i class="fa {{app.settings.asideFolded ? 'fa-indent' : 'fa-dedent'}} fa-fw"></i>
+        <span class="hidden-folded m-l-xs"><small>收缩侧边栏</small></span>
+    </a>
+</div>
+<!-- / navbar header -->
+<!-- navbar collapse -->
+<div class="collapse pos-rlt navbar-collapse box-shadow {{app.settings.navbarCollapseColor}}">
+    <!-- buttons -->
+    <div class="nav navbar-nav hidden-xs">
+        <!-- brand -->
+        <a href="#/" class="navbar-brand text-lt">
+            <i class="icon-eyeglasses"></i>
+            <img src="img/logo.png" alt="." class="hide">
+            <span class="m-l-xs">{{app.name}}</span>
+        </a>
+        <!-- / brand -->
+    </div>
+    <!-- / buttons -->
+    <!-- search form -->
+    <form class="navbar-form navbar-form-sm navbar-right shift" ui-shift="prependTo" target=".navbar-collapse" role="search" ng-controller="TypeaheadDemoCtrl">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm bg-light no-border rounded padder" placeholder="搜索...">
+                <span class="input-group-btn">
+                <button type="submit" class="btn btn-sm bg-light rounded"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+        </div>
+    </form>
+    <!-- / search form -->
+</div>
+<!-- / navbar collapse -->

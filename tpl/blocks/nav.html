@@ -1,0 +1,200 @@
+<ul class="nav">
+    <li class="line dk m-t-none"></li>
+    <!-- <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+        <span translate="aside.nav.components.COMPONENTS">组件</span>
+    </li> -->
+    <li ng-class="{active:$state.includes('app.ui')}">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+            <i class="glyphicon glyphicon-briefcase icon text-success"></i>
+            <span translate="aside.nav.components.ui_kits.UI_KITS">UI Kits</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span translate="aside.nav.components.ui_kits.UI_KITS">UI Kits</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.buttons">
+                    <span translate="aside.nav.components.ui_kits.BUTTONS">Buttons</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.icons">
+                    <b class="badge bg-info pull-right">3</b>
+                    <span translate="aside.nav.components.ui_kits.ICONS">Icons</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.grid">
+                    <span translate="aside.nav.components.ui_kits.GRID">Grid</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.widgets">
+                    <b class="badge bg-success pull-right">13</b>
+                    <span translate="aside.nav.WIDGETS">Widgets</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.bootstrap">
+                    <b class="badge bg-primary pull-right">16</b>
+                    <span translate="aside.nav.components.ui_kits.BOOTSTRAP">Bootstrap</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.sortable">
+                    <span translate="aside.nav.components.ui_kits.SORTABLE">Sortable</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.portlet">
+                    <span translate="aside.nav.components.ui_kits.PORTLET">Portlet</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.timeline">
+                    <span translate="aside.nav.components.ui_kits.TIMELINE">Timeline</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.tree">
+                    <span>Tree</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.toaster">
+                    <span>Toaster</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.jvectormap">
+                    <span translate="aside.nav.components.ui_kits.VECTOR_MAP">Vector Map</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.ui.googlemap">
+                    <span>Google Map</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li ui-sref-active="active">
+        <a ui-sref="app.css">
+            <i class="glyphicon  icon-magic-wand  text-danger"></i>
+            <span translate="aside.nav.components.CSS">CSS Animation</span>
+        </a>
+    </li>
+    <li ui-sref-active="active">
+        <a ui-sref="app.hover">
+            <i class="glyphicon  glyphicon-fire  text-warning"></i>
+            <span translate="aside.nav.components.HOVER">Hover Masters</span>
+        </a>
+    </li>
+    <li ng-class="{active:$state.includes('app.table')}">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+            <b class="label bg-primary pull-right">2</b>
+            <i class="glyphicon glyphicon-list text-info-lter"></i>
+            <span translate="aside.nav.components.table.TABLE">Table</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span translate="aside.nav.components.table.TABLE">Table</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.table.static">
+                    <span translate="aside.nav.components.table.TABLE_STATIC">Table static</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.table.datatable">
+                    <span translate="aside.nav.components.table.DATATABLE">Datatable</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.table.footable">
+                    <span translate="aside.nav.components.table.FOOTABLE">Footable</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.table.grid">
+                    <span>ngGrid</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li ng-class="{active:$state.includes('app.form')}">
+        <a href class="auto">
+            <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span>
+            <i class="glyphicon glyphicon-edit text-primary-lter"></i>
+            <span translate="aside.nav.components.form.FORM">Form</span>
+        </a>
+        <ul class="nav nav-sub dk">
+            <li class="nav-sub-header">
+                <a href>
+                    <span translate="aside.nav.components.form.FORM">Form</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.form.elements">
+                    <span translate="aside.nav.components.form.FORM_ELEMENTS">Form elements</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.form.validation">
+                    <span translate="aside.nav.components.form.FORM_VALIDATION">Form validation</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.form.wizard">
+                    <span translate="aside.nav.components.form.FORM_WIZARD">Form wizard</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.form.fileupload">
+                    <span>File upload</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.form.imagecrop">
+                    <span>Image crop</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.form.select">
+                    <span>Select</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.form.slider">
+                    <span>Slider</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.form.editor">
+                    <span>Editor</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li ui-sref-active="active">
+        <a ui-sref="app.chart">
+            <i class="glyphicon glyphicon-signal text-warning-dker"></i>
+            <span translate="aside.nav.components.CHART">Chart</span>
+        </a>
+    </li>
+</ul>
+<!-- / list
